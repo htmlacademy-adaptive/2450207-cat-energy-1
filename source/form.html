@@ -36,8 +36,8 @@
     <h1 class="main-container__title">Подбор программы</h1>
     <p class="main-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="data__form"  method="post">
-    <section class="data">
-
+      <div class="data__cat">
+      <section class="data">
     <div class="name">
       <p class="data__name">Имя:*</p>
       <label for="cat-name"></label>
@@ -79,8 +79,9 @@
     </li>
   </ul>
   </fieldset>
-
+      </div>
   <h2 class="owner-contacts">Контактные данные (владельца кота)</h2>
+<div class="owner-contacts__data">
   <div class="email">
     <p class="email__contacts-email">E-mail:*</p>
     <label for="e-mail"></label>
@@ -94,7 +95,7 @@
       <input class="field" placeholder="8 (960) 900-60-90" type="number" name="phone" id="phone"
       required>
     </div>
-
+  </div>
       <h2 class="comments">Комментарий</h2>
       <p class="comments__description">Расскажите обо всех повадах кота</p>
 
