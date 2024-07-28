@@ -1,17 +1,47 @@
 .main-nav {
-
-}
-
-.main-nav__toggle {
-
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
+@media (min-width: @tablet-width) {
+
+  .main-nav__wrapper {
+    display: flex;
+    width: 436px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .main-nav {
+    background-image: url("..//img/index-background-desktop");
+    color: #ffffff;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    width: 475px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
 .main-nav__list {
-
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 
