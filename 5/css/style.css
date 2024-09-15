@@ -112,6 +112,12 @@
   display: grid;
   grid-template-rows: 280px 280px;
 }
+.nutrition__title {
+  width: 50px;
+  height: 53px;
+  background-image: url("../sourse/img/sitting-cat.svg");
+  background-repeat: no-repeat;
+}
 @media (min-width: 768px) {
   .nutrition {
     display: grid;
@@ -153,6 +159,11 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+.strenghts__item--leaf {
+  width: 60px;
+  height: 60px;
+  background-image: url("../source/img/leaf.svg");
 }
 @media (min-width: 768px) {
   .strenghts {
