@@ -1,5 +1,16 @@
 .example {
+  background-color: #eaeaea;
+}
 
+@media (min-width: @tablet-width) {
+
+  .example {
+    background-color: #ffffff;
+  }
+}
+
+.example__progress {
+  display: flex;
 }
 
 .example__title {
@@ -11,7 +22,8 @@
 }
 
 .example__achievement {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .example__achievement-total {
