@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи</title>
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/logo.svg" width="70" height="59" alt="Логотип Cat Energy">
-    </a>
+    <div class="main-header__nav">
+    <a class="main-header__logo"></a>
     <a class="main-header__logo-text">
-      <img class="main-header__logo text" src="img/logo-text.svg" width="118" height="21" alt="Логотип Cat Energy">
+      <img class="main-header__logo__text text" src="img/logo-text.svg" width="118" height="21" alt="Логотип Cat Energy">
     </a>
 
     <nav class="main-nav">
@@ -36,8 +36,8 @@
     <h1 class="main-container__title">Подбор программы</h1>
     <p class="main-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="data__form"  method="post">
-    <section class="data">
-
+      <div class="data__cat">
+      <section class="data">
     <div class="name">
       <p class="data__name">Имя:*</p>
       <label for="cat-name"></label>
@@ -46,13 +46,13 @@
     </div>
       <div class="weight">
         <p class="data__name">Вес (кг):*</p>
-        <label for="cat-weight"></label>
+        <label for="weigth__cat"></label>
         <input class="field" placeholder="7" type="number" name="cat-weight" id="cat-weight"
         required>
       </div>
         <div class="age">
           <p class="data__age">Возраст (лет):*</p>
-          <label for="cat-age"></label>
+          <label for="age__cat"></label>
           <input class="field" placeholder="7" type="number" name="cat-age" id="cat-age"
           required>
         </div>
@@ -79,8 +79,9 @@
     </li>
   </ul>
   </fieldset>
-
+      </div>
   <h2 class="owner-contacts">Контактные данные (владельца кота)</h2>
+<div class="owner-contacts__data">
   <div class="email">
     <p class="email__contacts-email">E-mail:*</p>
     <label for="e-mail"></label>
@@ -94,7 +95,7 @@
       <input class="field" placeholder="8 (960) 900-60-90" type="number" name="phone" id="phone"
       required>
     </div>
-
+  </div>
       <h2 class="comments">Комментарий</h2>
       <p class="comments__description">Расскажите обо всех повадах кота</p>
 

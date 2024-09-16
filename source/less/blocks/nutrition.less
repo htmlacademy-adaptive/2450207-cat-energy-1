@@ -1,9 +1,11 @@
 .nutrition {
-
+  display: grid;
+  grid-template-rows: 280px 280px;
 }
 
 .nutrition__list {
-
+  background-image: url("..//img/sitting-cat.svg");
+  background-repeat: no-repeat;
 }
 
 .nutrition__title {
@@ -18,4 +20,18 @@
 
 }
 
+@media (min-width: @tablet-width) {
 
+  .nutrition {
+    display: grid;
+    grid-template-rows: 708px 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nutrition {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    background-color: #f2f2f2;
+  }
+}

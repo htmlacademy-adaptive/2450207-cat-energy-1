@@ -1,5 +1,5 @@
 .strenghts {
-
+  width: 280px;
 }
 
 .strenghts__title {
@@ -7,7 +7,9 @@
 }
 
 .strenghts__list {
-
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .strenghts__item {
@@ -19,7 +21,7 @@
 }
 
 .strenghts__item--leaf {
-
+  background-image: url("../source/img/leaf.svg");
 }
 
 .strenghts__item--bowl {
@@ -32,4 +34,27 @@
 
 .strenghts__item--clock {
 
+}
+
+@media (min-width: @tablet-width) {
+
+  .strenghts {
+    width: 708px;
+  }
+
+  .strenghts__list {
+    display: grid;
+    grid-template-columns: 230px 230px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .strenghts {
+    width: 1440px;
+  }
+
+  .strenghts__list {
+    display: flex;
+  }
 }
