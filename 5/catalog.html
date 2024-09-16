@@ -9,11 +9,10 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo logo-image" src="img/logo.svg" width="70" height="59" alt="Логотип Cat Energy">
-    </a>
-    <a class="main-header__logo logo-text">
-      <img class="main-header__logo text" src="img/logo-text.svg" width="118" height="21" alt="Логотип Cat Energy">
+    <div class="main-header__nav">
+    <a class="main-header__logo"></a>
+    <a class="main-header__logo-text">
+      <img class="main-header__logo__text text" src="img/logo-text.svg" width="118" height="21" alt="Логотип Cat Energy">
     </a>
 
     <nav class="main-nav">
@@ -38,11 +37,12 @@
     <h1 class="main-container__title">Каталог продукции</h1>
     <section class="main-container__catalog">
       <ul class="main-container__list-catalog">
+        <div class="catalog-item__product">
         <li class="catalog-item">
           <a class="catalog-item__image" href="#">
             <img src="img/chicken-small.jpg" alt="Изображение товара Cat Energy Куртца 500г" width="161" height="172">
           </a>
-          <div class="product">
+          <div class="product_catalog">
             <a class="product__link-title" href="#">
               <h3 class="product__title">Cat Energy Pro 500 г</h3>
             </a>
@@ -92,7 +92,8 @@
 
           <a class="catalog-item__product-button button" href="#">Заказать</a>
         </li>
-
+        </div>
+        <div class="catalog-item__product">
         <li class="catalog-item">
           <a class="catalog-item__image" href="#">
             <img src="img/fish-small.jpg" alt="Изображение товара Cat Energy Рыба 500г" width="163" height="174">
@@ -145,6 +146,8 @@
             </table>
           </div>
           </li>
+        </div>
+        <div class="catalog-item__product">
           <li class="catalog-item">
             <a class="catalog-item__image" href="#">
               <img src="img/buckwheat-small.jpg" alt="Изображение товара Cat Energy Гречка 500г" width="161" height="171">
@@ -195,6 +198,8 @@
                 </table>
               </div>
             </li>
+            </div>
+            <div class="catalog-item__product">
               <li class="catalog-item">
                 <a class="catalog-item__image" href="#">
                   <img src="img/rice.jpg" alt="Изображение товара Cat Energy Рис 500г" width="163" height="174">
@@ -225,6 +230,7 @@
                   <p class="more__text">На самом деле вкусов гораздо больше!</p>
                   <a class="more__button button button--gray" href="#">Показать все</a>
                 </li>
+            </div>
       </ul>
     </section>
 
@@ -237,7 +243,7 @@
         <ul class="additional-catalog__list">
           <li class="additional-catalog__item">
             <div class="additional-catalog__row">
-                <p class="additional-catalog__sweetener">Сахарозаменитель</p>
+                <p class="additional-catalog__sweetener">Сахарозамeнитель</p>
                 <table class="additional-catalog__options options">
                     <tr>
                       <td class="options__key">1 упаковка (100 г)</td>
