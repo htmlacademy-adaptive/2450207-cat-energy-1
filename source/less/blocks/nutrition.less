@@ -1,13 +1,39 @@
 .nutrition {
-  display: grid;
+  /*display: grid;
   grid-template-rows: 280px 280px;
-  width: 280px;
+  width: 280px;*/
+}
+
+@media (min-width: @desktop-width) {
+  .nutrition {
+    display: flex;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .nutrition {
+
+  }
 }
 
 .nutrition__list {
+  background-color: #f2f2f2;
+}
+
+@media (min-width: @desktop-width) {
+  .nutrition__list {
+    min-width: 570px;
+  }
+}
+
+.nutrition__loss {
   background-image: url("..//img/sitting-cat.svg");
   background-repeat: no-repeat;
-  background-color: #f2f2f2;
+}
+
+.nutrition__gain {
+  background-image: url("..//img/walking-cat.svg");
+  background-repeat: no-repeat;
 }
 
 .nutrition__title {
@@ -35,18 +61,5 @@
   line-height: 16px;
 }
 
-@media (min-width: @tablet-width) {
 
-  .nutrition {
-    display: grid;
-    grid-template-rows: 708px 708px;
-  }
-}
 
-@media (min-width: @desktop-width) {
-  .nutrition {
-    display: grid;
-    grid-template-columns: 570px 570px;
-    background-color: #f2f2f2;
-  }
-}

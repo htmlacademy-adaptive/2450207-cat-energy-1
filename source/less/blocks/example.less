@@ -11,6 +11,13 @@
 
 .example__progress {
   display: flex;
+  justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .example__progress-cost {
+    display: flex;
+  }
 }
 
 .example__title {
@@ -27,6 +34,7 @@
 .example__achievement {
   display: flex;
   flex-direction: column;
+  border: 1px solid #cdcdcd;
 }
 
 .example__achievement-total {
@@ -51,6 +59,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .example__cost {
+    width: 180px;
+  }
 }
 
 .example__cost-amount {
