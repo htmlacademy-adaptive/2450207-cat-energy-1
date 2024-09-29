@@ -17,29 +17,66 @@
 }
 
 .strenghts__item {
+  position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 50% -30%;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
 }
 
 .strenghts__text {
   margin-left: 70px;
+
+  @media (min-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 }
 
-.strenghts__item--leaf {
+@media (min-width: @desktop-width) {
+  .strenghts__text {
+    max-width: 250px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 70px;
+  }
+}
+
+.strenghts__item--leaf::before {
   background-image: url("..//img/leaf.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    width: 230px;
+  }
 }
 
-.strenghts__item--bowl {
+.strenghts__item--bowl::before {
   background-image: url("..//img/bowl.svg");
   background-repeat: no-repeat;
 }
 
-.strenghts__item--cutlery {
+.strenghts__item--cutlery::before {
   background-image: url("..//img/cutlery.svg");
   background-repeat: no-repeat;
 }
 
-.strenghts__item--clock {
+.strenghts__item--clock::before {
   background-image: url("..//img/clock.svg");
   background-repeat: no-repeat;
 }

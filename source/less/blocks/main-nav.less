@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 100%;
 }
 
 .main-nav__wrapper {
@@ -20,7 +19,7 @@
   .main-nav__wrapper {
     display: flex;
     flex-direction: row;
-    width: 436px;
+    min-width: 436px;
   }
 
   .main-nav__toggle {
@@ -30,6 +29,7 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
+    display: flex;
     background-image: url("..//img/index-background-desktop");
     color: #ffffff;
   }
@@ -37,7 +37,7 @@
   .main-nav__wrapper {
     display: flex;
     flex-direction: row;
-    width: 475px;
+    min-width: 475px;
   }
 
   .main-nav__toggle {
@@ -49,6 +49,20 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: flex;
+    min-width: 436px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    min-width: 436px;
+  }
 }
 
 .main-nav__toggle {
