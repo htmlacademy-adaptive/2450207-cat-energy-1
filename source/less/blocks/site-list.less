@@ -30,3 +30,17 @@
     border: none;
   }
 }
+
+.site-list__current {
+  position: relative;
+}
+
+.site-list__current::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #68b738;
+  right: 16px;
+  left: 16px;
+  bottom: 0;
+}
