@@ -2,8 +2,23 @@
 
 }
 
-.additional-catalog__title {
+.additional-catalog__item {
+  list-style-type: none;
+  border-top: solid 1px #cdcdcd;
+}
 
+.additional-catalog__title {
+  position: relative;
+}
+
+.additional-catalog__title::after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: calc(100vw - 20%);
+  right: 0;
+  height: 2px;
+  background-color: #68b738;
 }
 
 .additional-catalog__wrapper {
@@ -17,7 +32,7 @@
 }
 
 .additional-catalog__row {
-
+  margin-bottom: 30px;
 }
 
 .additional-catalog__sweetener {
@@ -25,7 +40,7 @@
 }
 
 .additional-catalog__options {
-
+  
 }
 
 .additional-catalog__button {
