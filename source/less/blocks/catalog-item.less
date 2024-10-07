@@ -2,20 +2,24 @@
   border-top: 1px solid #ebebeb;
   list-style-type: none;
   min-width: 324px;
-  margin: 20px;
+  margin: 10px;
   display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
 }
 
 @media (min-width: @tablet-width) {
   .catalog-item {
-    background-color: #cdcdcd;
-    display: inline-block;
+    background-color: #f2f2f2;
+    flex-direction: column;
+    justify-content: center;
+    width: 324px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-item {
-    background-color: #cdcdcd;
+    background-color: #f2f2f2;
   }
 }
 
@@ -33,6 +37,7 @@
 
 @media (min-width: @tablet-width) {
   .catalog-item__product {
-    
+    display: flex;
+    flex-wrap: wrap;
   }
 }

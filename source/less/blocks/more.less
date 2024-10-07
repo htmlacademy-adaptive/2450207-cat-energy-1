@@ -1,29 +1,40 @@
 .more {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .more {
+    background-image: url("..//img/plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .more {
+    background-image: url("..//img/plus.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 324px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more {
+
+  }
 }
 
 .more__title {
-    position: relative;
-    margin-top: 50px;
+    padding-top: 40px;
     text-transform: uppercase;
     font-family: "Oswald";
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    
-}
-
-.more__title::before {
-    position: absolute;
-    content: "+";
-    color: #d3d3d3;
-    width: 30px;
-    height: 30px;
-    margin: auto;
-    right: 0;
-    left: 0;
-    top: -20px;
 }
 
 .more__text {

@@ -2,6 +2,12 @@
   margin-bottom: 30px;
 }
 
+.product__catalog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .product__link-title {
   text-decoration: none;
 }
@@ -61,14 +67,14 @@
 
 @media (min-width: @tablet-width) {
   .product {
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     color: #000000;
   }
 }
 
 @media (min-width: @desktop-width) {
   .product {
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     color: #000000;
   }
 }
@@ -79,4 +85,17 @@
   text-transform: uppercase;
   padding: 10px 44px;
   background-color: #68b738;
+}
+
+@media (min-width: @tablet-width) {
+  .product__row-left,
+  .product__row-right {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product__row-right {
+    padding-left: 200px;
+  }
 }
