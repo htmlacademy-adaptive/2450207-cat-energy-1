@@ -20,9 +20,10 @@
   margin: 10px;
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .nutrition__list {
     min-width: 570px;
+    padding: 40px 10px 30px 10px;
   }
 }
 
@@ -31,9 +32,41 @@
   background-repeat: no-repeat;
 }
 
+@media (min-width: @tablet-width) {
+  .nutrition__loss {
+    background-image: url("..//img/sitting-cat-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nutrition__loss {
+    background-image: url("..//img/sitting-cat.svg");
+    background-repeat: no-repeat;
+    background-position: left 10px top 10px;
+  }
+}
+
 .nutrition__gain {
   background-image: url("..//img/walking-cat.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .nutrition__gain {
+    background-image: url("..//img/walking-cat-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nutrition__gain {
+    background-image: url("..//img/walking-cat.svg");
+    background-repeat: no-repeat;
+    background-position: left 10px top 10px;
+  }
 }
 
 .nutrition__title {
