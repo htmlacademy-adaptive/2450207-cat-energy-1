@@ -34,7 +34,7 @@
 
   <main class="main-container">
     <h1 class="main-container__title">Подбор программы</h1>
-    <p class="main-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <p class="main-container__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
     <form class="data__form"  method="post">
       <div class="data__cat">
       <section class="data">
@@ -85,44 +85,44 @@
   <div class="email">
     <p class="email__contacts-email">E-mail:*</p>
     <label for="e-mail"></label>
-    <input class="field" placeholder="kuklachev@gmail.com" type="email" name="e-mail" id="e-mail"
+    <input class="field email__field" placeholder="kuklachev@gmail.com" type="email" name="e-mail" id="e-mail"
     required>
   </div>
 
     <div class="phone">
       <p class="phone__contacts-phone">Телефон:*</p>
       <label for="phone"></label>
-      <input class="field" placeholder="8 (960) 900-60-90" type="number" name="phone" id="phone"
+      <input class="field  phone__field" placeholder="8 (960) 900-60-90" type="number" name="phone" id="phone"
       required>
     </div>
   </div>
       <h2 class="comments">Комментарий</h2>
-      <p class="comments__description">Расскажите обо всех повадах кота</p>
+      <p class="comments__description">Расскажите обо всех повадках кота</p>
 
       <h2 class="additionally">Дополнительно</h2>
-      <ul class="additionally__filter-list">
-        <li class="filter-list">
+      <ul class="additionally__filter">
+        <li class="additionally__filter-list">
           <label class="control">
             <input class="control__input" type="checkbox" name="Сахарозаменитель" checked>
             <span class="control__label">
               Сахарозаменитель </span>
           </label>
         </li>
-        <li class="filter-list">
+        <li class="additionally__filter-list">
           <label class="control">
             <input class="control__input" type="checkbox" name="Питьевая вода">
             <span class="control__label">
               Питьевая вода </span>
           </label>
         </li>
-        <li class="filter-list">
+        <li class="additionally__filter-list">
           <label class="control">
             <input class="control__input" type="checkbox" name="Молоко">
             <span class="control__label">
               Молоко </span>
           </label>
         </li>
-        <li class="filter-list">
+        <li class="additionally__filter-list">
           <label class="control">
             <input class="control__input" type="checkbox" name="Витамины">
             <span class="control__label">
@@ -140,10 +140,13 @@
     <section class="main-footer__contacts contacts">
       <div class="cooperation">
         <p class="cooperation__invitation">Приглашаем  сотрудничеству дилеров!</p>
-        <p class="cooperation__address">ул. Большая Конюшенная, д.19/8</p>
-        <p class="cooperation__city">Санкт-Петербург</p>
+        <p class="cooperation__address">ул. Большая Конюшенная, д.19/8  Санкт-Петербург</p>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.32047247761802!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1727092179545!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
 
     <section class="main-footer__wrapper container">
