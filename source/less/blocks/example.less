@@ -1,6 +1,5 @@
 .example {
   background-color: #eaeaea;
-  width: 280px;
   margin-bottom: 20px;
 }
 
@@ -26,6 +25,20 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__text {

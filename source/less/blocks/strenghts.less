@@ -10,6 +10,20 @@
   line-height: 40px;
 }
 
+@media (min-width: @tablet-width) {
+  .strenghts__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .strenghts__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .strenghts__list {
   margin: 0;
   padding: 0;
@@ -60,10 +74,16 @@
 .strenghts__item--leaf::before {
   background-image: url("..//img/leaf.svg");
   background-repeat: no-repeat;
+}
 
-  @media (min-width: @desktop-width) {
-    width: 230px;
-  }
+.strenghts__item--leaf::after {
+  position: absolute;
+  content: "";
+  background-image: url("..//img/one.svg");
+  background-repeat: no-repeat;
+  width: 112px;
+  height: 208px;
+  opacity: 50%;
 }
 
 .strenghts__item--bowl::before {
@@ -82,20 +102,28 @@
 }
 
 @media (min-width: @tablet-width) {
+  .strenghts__item--leaf::before {
+    background-image: url("..//img/leaf.svg");
+    background-repeat: no-repeat;
+    background-position: 50% -150%;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .strenghts {
-    width: 708px;
+
   }
 
   .strenghts__list {
     display: grid;
     grid-template-columns: 230px 230px;
+    grid-column-gap: 100px;
   }
 }
 
 @media (min-width: @desktop-width) {
-
   .strenghts {
-    width: 1440px;
+
   }
 
   .strenghts__list {

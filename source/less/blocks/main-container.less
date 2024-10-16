@@ -1,5 +1,39 @@
 .main-container {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
 
+@media (min-width: @tablet-width) {
+  .main-container {
+    width: 100%;
+    max-width: 628px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-container-index {
+    width: 100%;
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container-index {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .main-container__form-button {
@@ -11,7 +45,24 @@
 }
 
 .main-container__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
 
+@media (min-width: @tablet-width) {
+  .main-container__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-container__text {

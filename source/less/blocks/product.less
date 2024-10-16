@@ -22,6 +22,13 @@
   flex-wrap: wrap;
 }
 
+@media (min-width: @desktop-width) {
+  .product__catalog {
+    width: 169px;
+  }
+}
+
+
 .product__link-title {
   text-decoration: none;
 }
@@ -88,6 +95,12 @@
   background-color: #68b738;
 }
 
+@media (min-width: @desktop-width) {
+  .product__button {
+    padding: 10px 30px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .product__row-left,
   .product__row-right {
@@ -97,6 +110,12 @@
 
 @media (min-width: @tablet-width) {
   .product__row-right {
-    padding-left: 200px;
+    padding-left: 150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__row-right {
+    padding-left: 80px;
   }
 }

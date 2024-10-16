@@ -1,6 +1,6 @@
 .catalog-item {
   list-style-type: none;
-  min-width: 324px;
+  width: 280px;
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -18,13 +18,13 @@
 @media (min-width: @tablet-width) {
   .catalog-item {
     background-color: #f2f2f2;
-    width: 324px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-item {
     background-color: #f2f2f2;
+    width: 245px;
   }
 }
 
@@ -39,6 +39,13 @@
   padding: 10px 109px;
   background-color: #68b738;
 }
+
+@media (min-width: @desktop-width) {
+  .catalog-item__product-button {
+    padding: 8px 50px;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .catalog-item__product {
