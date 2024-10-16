@@ -1,11 +1,27 @@
-
-
 .email {
+  display: flex;
+  margin-bottom: 10px;
+}
 
+@media (min-width: @desktop-width) {
+  .email {
+    margin-right: 20px;
+  }
 }
 
 .email__contacts-email {
 
 }
 
+.email__field {
+  background-image: url("../img/email.svg");
+  background-repeat: no-repeat;
+  background-position: right 22px center;
+}
+
+@media (min-width: @desktop-width) {
+  .email__field {
+    width: 494px;
+  }
+}
 
