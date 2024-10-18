@@ -1,37 +1,112 @@
 .nutrition {
-  display: grid;
-  grid-template-rows: 280px 280px;
-}
 
-.nutrition__list {
-  background-image: url("..//img/sitting-cat.svg");
-  background-repeat: no-repeat;
-}
-
-.nutrition__title {
-
-}
-
-.nutrition__text {
-
-}
-
-.nutrition__link {
-
-}
-
-@media (min-width: @tablet-width) {
-
-  .nutrition {
-    display: grid;
-    grid-template-rows: 708px 708px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .nutrition {
-    display: grid;
-    grid-template-columns: 570px 570px;
-    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .nutrition {
+
+  }
+}
+
+.nutrition__list {
+  background-color: #f2f2f2;
+  margin: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .nutrition__list {
+    min-width: 570px;
+    padding: 40px 10px 30px 10px;
+  }
+}
+
+.nutrition__loss {
+  background-image: url("..//img/sitting-cat.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .nutrition__loss {
+    background-image: url("..//img/sitting-cat-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nutrition__loss {
+    background-image: url("..//img/sitting-cat.svg");
+    background-repeat: no-repeat;
+    background-position: left 10px top 10px;
+  }
+}
+
+.nutrition__gain {
+  background-image: url("..//img/walking-cat.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .nutrition__gain {
+    background-image: url("..//img/walking-cat-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nutrition__gain {
+    background-image: url("..//img/walking-cat.svg");
+    background-repeat: no-repeat;
+    background-position: left 10px top 10px;
+  }
+}
+
+.nutrition__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .nutrition__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nutrition__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.nutrition__text {
+  width: 227px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.nutrition__link {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+
+

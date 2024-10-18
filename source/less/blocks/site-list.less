@@ -7,5 +7,42 @@
 }
 
 .site-list__link {
-  list-style-type: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+  padding: 13px 10px;
+  border-top: 1px solid #e6e6e6;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__link {
+    border: none;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    border: none;
+  }
+}
+
+.site-list__current {
+  position: relative;
+}
+
+.site-list__current::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #68b738;
+  right: 16px;
+  left: 16px;
+  bottom: 0;
 }

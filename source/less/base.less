@@ -3,7 +3,25 @@ body {
 }
 
 .container {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
 
+@media (min-width: @tablet-width) {
+  .container {
+    width: 100%;
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .filter-list {
@@ -11,15 +29,18 @@ body {
 }
 
 .field {
-
+  flex: 1 0 70px;
+  height: 45px;
+  min-width: 177px;
 }
 
 .slider {
 
 }
 
-.contacts__map {
-
+.contacts__map iframe {
+  border: none;
+  display: block;
 }
 
 .program {
@@ -28,6 +49,10 @@ body {
 
 .owner-contacts {
 
+}
+
+.visually-hidden {
+  visibility: hidden;
 }
 
 
