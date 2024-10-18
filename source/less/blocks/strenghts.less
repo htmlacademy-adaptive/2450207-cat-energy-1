@@ -27,7 +27,9 @@
 .strenghts__list {
   margin: 0;
   padding: 0;
+  padding-top: 20px;
   list-style-type: none;
+  counter-reset: num;
 }
 
 .strenghts__item {
@@ -41,12 +43,29 @@
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
-    background-position: 50% -30%;
+    background-position: 75% 25%;
+
 
     @media (min-width: @tablet-width) {
       width: 80px;
-      height: 80px;
+
+      background-position: top;
+
     }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .strenghts__item::after {
+    content: counter(num);
+    counter-increment: num;
+    z-index: -1;
+    position: absolute;
+    font-size: 280px;
+    color: #f2f2f2;
+    font-family: "Oswald";
+    bottom: -64px;
+    left: 118px;
   }
 }
 
@@ -76,16 +95,6 @@
   background-repeat: no-repeat;
 }
 
-.strenghts__item--leaf::after {
-  position: absolute;
-  content: "";
-  background-image: url("..//img/one.svg");
-  background-repeat: no-repeat;
-  width: 112px;
-  height: 208px;
-  opacity: 50%;
-}
-
 .strenghts__item--bowl::before {
   background-image: url("..//img/bowl.svg");
   background-repeat: no-repeat;
@@ -105,7 +114,7 @@
   .strenghts__item--leaf::before {
     background-image: url("..//img/leaf.svg");
     background-repeat: no-repeat;
-    background-position: 50% -150%;
+    background-position: 75% 25%;
   }
 }
 
