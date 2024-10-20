@@ -1,7 +1,38 @@
 .comments {
+  position: relative;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
 
+.comments::after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: calc(100vw - 50%);
+  right: 0;
+  height: 2px;
+  background-color: #68b738;
+}
+
+@media (min-width: @tablet-width) {
+  .comments {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comments {
+    border: none;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .comments__description {
-
+  text-transform: uppercase;
+  border: solid 1px #e7e7e7;
+  padding-bottom: 100px;
 }

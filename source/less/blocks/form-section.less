@@ -1,13 +1,45 @@
 .form-section {
+  border: none;
+}
 
+.form-section::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #ededed;
+  right: -16px;
+  left: -16px;
+  bottom: -40px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-section {
+    border: solid 1px #e7e7e7;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-section {
+    border: solid 1px #e7e7e7;
+  }
 }
 
 .form-section__progam-type {
 
 }
 
-.form-section__filter-item {
+.form-section__progam-type::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #ededed;
+  right: -16px;
+  left: -16px;
+  bottom: -130px;
+}
 
+.form-section__filter-item {
+  list-style-type: none;
 }
 
 

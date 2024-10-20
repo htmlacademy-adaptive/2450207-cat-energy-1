@@ -1,35 +1,65 @@
 .product {
-
+  margin-bottom: 30px;
 }
 
-.product__link-title {
-
-}
-
-.product__title {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-  text-align: center;
-  list-style-type: none;
+@media (min-width: @desktop-width) {
+  .product {
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .product {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
 
+.product__catalog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @desktop-width) {
+  .product__catalog {
+    width: 169px;
+  }
+}
+
+
+.product__link-title {
+  text-decoration: none;
+}
+
+.product__title {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  list-style-type: none;
+  color: #222222;
+}
+
+@media (min-width: @tablet-width) {
   .product__title {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .product__title {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 .product__slogan {
+  font-family: "Oswald";
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
@@ -37,21 +67,55 @@
   line-height: 14px;
 }
 
-.product__info {
-
-}
-
 @media (min-width: @tablet-width) {
-
-  .product {
-    background-color: #ffffff;
-    color: #000000;
+  .product__slogan {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .product {
-    background-color: #ffffff;
-    color: #000000;
+  .product__slogan {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.product__info {
+
+}
+
+.product__button {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 44px;
+  background-color: #68b738;
+}
+
+@media (min-width: @desktop-width) {
+  .product__button {
+    padding: 10px 30px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product__row-left,
+  .product__row-right {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product__row-right {
+    padding-left: 150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__row-right {
+    padding-left: 80px;
   }
 }
