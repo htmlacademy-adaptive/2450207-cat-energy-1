@@ -14,6 +14,7 @@
   .strenghts__title {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 30px;
   }
 }
 
@@ -38,20 +39,23 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -50px;
+    left: 60px;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
     background-position: 75% 25%;
 
-
     @media (min-width: @tablet-width) {
       width: 80px;
-
       background-position: top;
-
     }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .strenghts__item {
+    margin-bottom: 40px;
   }
 }
 
